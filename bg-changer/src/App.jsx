@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [color, setColor] = useState('olive')
+  const [color, setColor] = useState('grey')
 
 
   // function changeColor(color) {
@@ -24,6 +24,21 @@ function App() {
           className='outline-none px-4 py-1 rounded-full  shadow-lg text-black'
           style={{backgroundColor: 'green'}}
           >Green</button>
+          <button
+          onClick={() => setColor('yellow')}
+          className='outline-none px-4 py-1 rounded-full  shadow-lg text-black'
+          style={{backgroundColor: 'yellow'}}
+          >Yellow</button>
+           <button
+          onClick={() => setColor('pink')}
+          className='outline-none px-4 py-1 rounded-full  shadow-lg text-black'
+          style={{backgroundColor: 'pink'}}
+          >Pink</button>
+          <button
+          onClick={() => setColor('blue')}
+          className='outline-none px-4 py-1 rounded-full  shadow-lg text-black'
+          style={{backgroundColor: 'blue'}}
+          >Blue</button>
           
           </div>
       </div>
